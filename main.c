@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdbool.h>
+#include <errno.h>
 
 int main(int argc, char ** argv) {
     printf("Here everything begins\n");
@@ -17,7 +18,7 @@ int main(int argc, char ** argv) {
         switch (c)
           {
           case 'a':
-              printf("Helaaaap output");
+              printf("Helaaaap output\n");
               break;
           case 'h':
             helpFlag = true;
@@ -38,13 +39,31 @@ int main(int argc, char ** argv) {
             }
             return 1;
           default:
-            printf("somethings went wrong");
+            printf("somethings went wrong\n");
             abort ();
       }
 
     for (index = optind; index < argc; index++)
-    printf ("Non-option argument %s\n", argv[index]);
+    {
+        printf("Non-option argument %s\n", argv[index]);
+    }
 
+    FILE *filePointer;
+    filePointer = fopen("./bin.bin", "rwb");
+    int32_t fileError = errno;
+    if(fileError > 0)
+    {
+       switch(fileError)
+       {
+           case 2:
+               printf("No such file or directory\n");
+               abort();
+               break;
+           case 13:
+               printf("Permission denied\n");
+               abort();
+               break;
+       }
+    }
     return 0;
-
 }
