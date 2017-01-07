@@ -177,6 +177,33 @@ LibTomCrypt/src/ciphers/aes/aes_tab.c.s:
 	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/ciphers/aes/aes_tab.c.s
 .PHONY : LibTomCrypt/src/ciphers/aes/aes_tab.c.s
 
+LibTomCrypt/src/encauth/ccm/ccm_memory.o: LibTomCrypt/src/encauth/ccm/ccm_memory.c.o
+
+.PHONY : LibTomCrypt/src/encauth/ccm/ccm_memory.o
+
+# target to build an object file
+LibTomCrypt/src/encauth/ccm/ccm_memory.c.o:
+	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/encauth/ccm/ccm_memory.c.o
+.PHONY : LibTomCrypt/src/encauth/ccm/ccm_memory.c.o
+
+LibTomCrypt/src/encauth/ccm/ccm_memory.i: LibTomCrypt/src/encauth/ccm/ccm_memory.c.i
+
+.PHONY : LibTomCrypt/src/encauth/ccm/ccm_memory.i
+
+# target to preprocess a source file
+LibTomCrypt/src/encauth/ccm/ccm_memory.c.i:
+	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/encauth/ccm/ccm_memory.c.i
+.PHONY : LibTomCrypt/src/encauth/ccm/ccm_memory.c.i
+
+LibTomCrypt/src/encauth/ccm/ccm_memory.s: LibTomCrypt/src/encauth/ccm/ccm_memory.c.s
+
+.PHONY : LibTomCrypt/src/encauth/ccm/ccm_memory.s
+
+# target to generate assembly for a file
+LibTomCrypt/src/encauth/ccm/ccm_memory.c.s:
+	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/encauth/ccm/ccm_memory.c.s
+.PHONY : LibTomCrypt/src/encauth/ccm/ccm_memory.c.s
+
 LibTomCrypt/src/misc/crypt/crypt_argchk.o: LibTomCrypt/src/misc/crypt/crypt_argchk.c.o
 
 .PHONY : LibTomCrypt/src/misc/crypt/crypt_argchk.o
@@ -231,6 +258,60 @@ LibTomCrypt/src/misc/crypt/crypt_cipher_descriptor.c.s:
 	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/misc/crypt/crypt_cipher_descriptor.c.s
 .PHONY : LibTomCrypt/src/misc/crypt/crypt_cipher_descriptor.c.s
 
+LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.o: LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c.o
+
+.PHONY : LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.o
+
+# target to build an object file
+LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c.o:
+	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c.o
+.PHONY : LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c.o
+
+LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.i: LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c.i
+
+.PHONY : LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.i
+
+# target to preprocess a source file
+LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c.i:
+	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c.i
+.PHONY : LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c.i
+
+LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.s: LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c.s
+
+.PHONY : LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.s
+
+# target to generate assembly for a file
+LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c.s:
+	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c.s
+.PHONY : LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c.s
+
+LibTomCrypt/src/misc/crypt/crypt_find_cipher.o: LibTomCrypt/src/misc/crypt/crypt_find_cipher.c.o
+
+.PHONY : LibTomCrypt/src/misc/crypt/crypt_find_cipher.o
+
+# target to build an object file
+LibTomCrypt/src/misc/crypt/crypt_find_cipher.c.o:
+	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/misc/crypt/crypt_find_cipher.c.o
+.PHONY : LibTomCrypt/src/misc/crypt/crypt_find_cipher.c.o
+
+LibTomCrypt/src/misc/crypt/crypt_find_cipher.i: LibTomCrypt/src/misc/crypt/crypt_find_cipher.c.i
+
+.PHONY : LibTomCrypt/src/misc/crypt/crypt_find_cipher.i
+
+# target to preprocess a source file
+LibTomCrypt/src/misc/crypt/crypt_find_cipher.c.i:
+	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/misc/crypt/crypt_find_cipher.c.i
+.PHONY : LibTomCrypt/src/misc/crypt/crypt_find_cipher.c.i
+
+LibTomCrypt/src/misc/crypt/crypt_find_cipher.s: LibTomCrypt/src/misc/crypt/crypt_find_cipher.c.s
+
+.PHONY : LibTomCrypt/src/misc/crypt/crypt_find_cipher.s
+
+# target to generate assembly for a file
+LibTomCrypt/src/misc/crypt/crypt_find_cipher.c.s:
+	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/misc/crypt/crypt_find_cipher.c.s
+.PHONY : LibTomCrypt/src/misc/crypt/crypt_find_cipher.c.s
+
 LibTomCrypt/src/misc/crypt/crypt_register_cipher.o: LibTomCrypt/src/misc/crypt/crypt_register_cipher.c.o
 
 .PHONY : LibTomCrypt/src/misc/crypt/crypt_register_cipher.o
@@ -257,6 +338,33 @@ LibTomCrypt/src/misc/crypt/crypt_register_cipher.s: LibTomCrypt/src/misc/crypt/c
 LibTomCrypt/src/misc/crypt/crypt_register_cipher.c.s:
 	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/misc/crypt/crypt_register_cipher.c.s
 .PHONY : LibTomCrypt/src/misc/crypt/crypt_register_cipher.c.s
+
+LibTomCrypt/src/misc/mem_neq.o: LibTomCrypt/src/misc/mem_neq.c.o
+
+.PHONY : LibTomCrypt/src/misc/mem_neq.o
+
+# target to build an object file
+LibTomCrypt/src/misc/mem_neq.c.o:
+	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/misc/mem_neq.c.o
+.PHONY : LibTomCrypt/src/misc/mem_neq.c.o
+
+LibTomCrypt/src/misc/mem_neq.i: LibTomCrypt/src/misc/mem_neq.c.i
+
+.PHONY : LibTomCrypt/src/misc/mem_neq.i
+
+# target to preprocess a source file
+LibTomCrypt/src/misc/mem_neq.c.i:
+	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/misc/mem_neq.c.i
+.PHONY : LibTomCrypt/src/misc/mem_neq.c.i
+
+LibTomCrypt/src/misc/mem_neq.s: LibTomCrypt/src/misc/mem_neq.c.s
+
+.PHONY : LibTomCrypt/src/misc/mem_neq.s
+
+# target to generate assembly for a file
+LibTomCrypt/src/misc/mem_neq.c.s:
+	$(MAKE) -f CMakeFiles/AES_Tool.dir/build.make CMakeFiles/AES_Tool.dir/LibTomCrypt/src/misc/mem_neq.c.s
+.PHONY : LibTomCrypt/src/misc/mem_neq.c.s
 
 LibTomCrypt/src/misc/zeromem.o: LibTomCrypt/src/misc/zeromem.c.o
 
@@ -327,15 +435,27 @@ help:
 	@echo "... LibTomCrypt/src/ciphers/aes/aes_tab.o"
 	@echo "... LibTomCrypt/src/ciphers/aes/aes_tab.i"
 	@echo "... LibTomCrypt/src/ciphers/aes/aes_tab.s"
+	@echo "... LibTomCrypt/src/encauth/ccm/ccm_memory.o"
+	@echo "... LibTomCrypt/src/encauth/ccm/ccm_memory.i"
+	@echo "... LibTomCrypt/src/encauth/ccm/ccm_memory.s"
 	@echo "... LibTomCrypt/src/misc/crypt/crypt_argchk.o"
 	@echo "... LibTomCrypt/src/misc/crypt/crypt_argchk.i"
 	@echo "... LibTomCrypt/src/misc/crypt/crypt_argchk.s"
 	@echo "... LibTomCrypt/src/misc/crypt/crypt_cipher_descriptor.o"
 	@echo "... LibTomCrypt/src/misc/crypt/crypt_cipher_descriptor.i"
 	@echo "... LibTomCrypt/src/misc/crypt/crypt_cipher_descriptor.s"
+	@echo "... LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.o"
+	@echo "... LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.i"
+	@echo "... LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.s"
+	@echo "... LibTomCrypt/src/misc/crypt/crypt_find_cipher.o"
+	@echo "... LibTomCrypt/src/misc/crypt/crypt_find_cipher.i"
+	@echo "... LibTomCrypt/src/misc/crypt/crypt_find_cipher.s"
 	@echo "... LibTomCrypt/src/misc/crypt/crypt_register_cipher.o"
 	@echo "... LibTomCrypt/src/misc/crypt/crypt_register_cipher.i"
 	@echo "... LibTomCrypt/src/misc/crypt/crypt_register_cipher.s"
+	@echo "... LibTomCrypt/src/misc/mem_neq.o"
+	@echo "... LibTomCrypt/src/misc/mem_neq.i"
+	@echo "... LibTomCrypt/src/misc/mem_neq.s"
 	@echo "... LibTomCrypt/src/misc/zeromem.o"
 	@echo "... LibTomCrypt/src/misc/zeromem.i"
 	@echo "... LibTomCrypt/src/misc/zeromem.s"

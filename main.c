@@ -56,7 +56,7 @@ int main(int argc, char ** argv)
     }
 
     FILE *filePointer;
-    filePointer = fopen("../bin.bin", "rwb");
+    filePointer = fopen("./bin.bin", "rwb");
     int32_t fileError;
     fileError = errno;
     if(fileError > 0)
@@ -64,12 +64,10 @@ int main(int argc, char ** argv)
        switch(fileError)
        {
            case 2:
-               printf("No such file or directory\n");
-               abort();
+               printf("No such file or directory was founded\n");
                break;
            case 13:
                printf("Permission denied\n");
-               abort();
                break;
        }
     }
@@ -92,8 +90,34 @@ int main(int argc, char ** argv)
     printf("Data is equal to \"%s\" \n", data);
 #endif
 
+    /* Fill all needed values first */
+    uint8_t key[16], nonce[12], pt[32], ct[32],
+            tag[16], tagcp[16];
+    uint64_t taglen;
+    int32_t err;
+
     /*here encryption should be provided */
     register_cipher(&aes_desc);
+
+    /* encrypt it */
+    taglen = sizeof(tag);
+    if ((err = ccm_memory(find_cipher("aes"),
+                            key, 16, /* 128-bit key */
+                            NULL, /* not prescheduled */
+                            nonce, 12, /* 96-bit nonce */
+                            NULL, 0, /* no header */
+                            pt, 32, /* 32-byte plaintext */
+                            ct, /* ciphertext */
+                            tag, &taglen,
+                            CCM_ENCRYPT)) != CRYPT_OK)
+    {
+        printf("Error code is %d", err);
+        return -1;
+    }
+
+#if DebugInfo
+    printf("smkfmdsf");
+#endif
 
     free(data);
     fclose(filePointer);

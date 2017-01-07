@@ -95,13 +95,25 @@
 		<Unit filename="/home/ahubchak/CLionProjects/AES Tool/LibTomCrypt/src/ciphers/aes/aes_tab.c">
 			<Option target="AES_Tool"/>
 		</Unit>
+		<Unit filename="/home/ahubchak/CLionProjects/AES Tool/LibTomCrypt/src/encauth/ccm/ccm_memory.c">
+			<Option target="AES_Tool"/>
+		</Unit>
 		<Unit filename="/home/ahubchak/CLionProjects/AES Tool/LibTomCrypt/src/misc/crypt/crypt_argchk.c">
 			<Option target="AES_Tool"/>
 		</Unit>
 		<Unit filename="/home/ahubchak/CLionProjects/AES Tool/LibTomCrypt/src/misc/crypt/crypt_cipher_descriptor.c">
 			<Option target="AES_Tool"/>
 		</Unit>
+		<Unit filename="/home/ahubchak/CLionProjects/AES Tool/LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c">
+			<Option target="AES_Tool"/>
+		</Unit>
+		<Unit filename="/home/ahubchak/CLionProjects/AES Tool/LibTomCrypt/src/misc/crypt/crypt_find_cipher.c">
+			<Option target="AES_Tool"/>
+		</Unit>
 		<Unit filename="/home/ahubchak/CLionProjects/AES Tool/LibTomCrypt/src/misc/crypt/crypt_register_cipher.c">
+			<Option target="AES_Tool"/>
+		</Unit>
+		<Unit filename="/home/ahubchak/CLionProjects/AES Tool/LibTomCrypt/src/misc/mem_neq.c">
 			<Option target="AES_Tool"/>
 		</Unit>
 		<Unit filename="/home/ahubchak/CLionProjects/AES Tool/LibTomCrypt/src/misc/zeromem.c">

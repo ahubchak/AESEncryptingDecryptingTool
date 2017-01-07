@@ -13,6 +13,10 @@ set(LIBTOMCRYPT_SOURCE
         ./LibTomCrypt/src/misc/zeromem.c
         ./LibTomCrypt/src/ciphers/aes/aes.c
         ./LibTomCrypt/src/ciphers/aes/aes_tab.c
+        ./LibTomCrypt/src/misc/crypt/crypt_find_cipher.c
+        ./LibTomCrypt/src/encauth/ccm/ccm_memory.c
+        ./LibTomCrypt/src/misc/crypt/crypt_cipher_is_valid.c
+        ./LibTomCrypt/src/misc/mem_neq.c
         )
 
 set(LIBTOMCRYPT_INCLUDE
