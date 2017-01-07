@@ -5,6 +5,7 @@
 #include <stdbool.h>
 #include <errno.h>
 #include <stdint.h>
+#include <tomcrypt.h>
 
 #define DebugInfo true
 
@@ -85,9 +86,14 @@ int main(int argc, char ** argv)
 
     uint8_t * data;
     data = malloc(fileSize);
-    fread(data, 1, fileSize, filePointer);
+    fread(data, sizeof(uint8_t), fileSize, filePointer);
 
+#if DebugInfo
     printf("Data is equal to \"%s\" \n", data);
+#endif
+
+    /*here encryption should be provided */
+    register_cipher(&aes_desc);
 
     free(data);
     fclose(filePointer);
