@@ -4,9 +4,15 @@
 #include <unistd.h>
 #include <stdbool.h>
 #include <errno.h>
+#include <stdint.h>
 
-int main(int argc, char ** argv) {
+#define DebugInfo true
+
+int main(int argc, char ** argv)
+{
+#if DebugInfo
     printf("Here everything begins\n");
+#endif
 
     bool helpFlag = false;
     int index;
@@ -49,8 +55,9 @@ int main(int argc, char ** argv) {
     }
 
     FILE *filePointer;
-    filePointer = fopen("./bin.bin", "rwb");
-    int32_t fileError = errno;
+    filePointer = fopen("../bin.bin", "rwb");
+    int32_t fileError;
+    fileError = errno;
     if(fileError > 0)
     {
        switch(fileError)
@@ -65,5 +72,24 @@ int main(int argc, char ** argv) {
                break;
        }
     }
+
+    /* Get file size */
+    uint16_t fileSize;
+    fseek(filePointer, 0L, SEEK_END);
+    fileSize = ftell(filePointer);
+    rewind(filePointer);
+
+#if DebugInfo
+    printf("File size is equal to %u\n", fileSize);
+#endif
+
+    uint8_t * data;
+    data = malloc(fileSize);
+    fread(data, 1, fileSize, filePointer);
+
+    printf("Data is equal to \"%s\" \n", data);
+
+    free(data);
+    fclose(filePointer);
     return 0;
 }
