@@ -1,10 +1,7 @@
-#include <stdio.h>
-#include <ctype.h>
-#include <stdlib.h>
 #include <unistd.h>
+#include <stdint.h>
 #include <stdbool.h>
 #include <errno.h>
-#include <stdint.h>
 #include <tomcrypt.h>
 
 #define DebugInfo true
@@ -16,8 +13,8 @@ int main(int argc, char ** argv)
 #endif
 
     bool helpFlag = false;
-    int index;
-    int c;
+    int32_t index;
+    int32_t c;
 
     opterr = 0;
 
@@ -116,7 +113,7 @@ int main(int argc, char ** argv)
     }
 
 #if DebugInfo
-    printf("smkfmdsf");
+    printf("Here it ends\n");
 #endif
 
     free(data);
